@@ -6,6 +6,4 @@ class Solution {
 
     ranges::sort(sortedArr);
 
-    for (const int a : sortedArr)
-      if (!rank.contains(a))
-        rank[a] = rank.size() + 1;
+  
