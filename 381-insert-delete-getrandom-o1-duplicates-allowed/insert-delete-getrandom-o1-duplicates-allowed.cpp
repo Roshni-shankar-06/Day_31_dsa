@@ -12,11 +12,4 @@ class RandomizedCollection {
   }
 
   bool remove(int val) {
-    if (!valToIndices.contains(val))
-      return false;
-
-    const int index = valToIndices[val].back();
-    valToIndices[items.back().val][items.back().indexInMap] = index;
-    valToIndices[val].pop_back();
-    if (valToIndices[val].empty())
-    
+  
