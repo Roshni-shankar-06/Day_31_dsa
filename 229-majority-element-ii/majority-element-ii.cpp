@@ -15,15 +15,4 @@ class Solution {
       } else if (countSoFar1 == 0) {  // Assign the new candidate.
         candidate1 = num;
         ++countSoFar1;
-      } else if (countSoFar2 == 0) {  // Assign the new candidate.
-        candidate2 = num;
-        ++countSoFar2;
-      } else {  // Meet a new number, so pair with the previous counts.
-        --countSoFar1;
-        --countSoFar2;
-      }
-
-    const int count1 = ranges::count(nums, candidate1);
-    const int count2 = ranges::count(nums, candidate2);
-
-  
+    
