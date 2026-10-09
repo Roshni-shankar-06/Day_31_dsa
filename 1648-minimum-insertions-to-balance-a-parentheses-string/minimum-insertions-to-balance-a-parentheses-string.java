@@ -22,19 +22,4 @@ class Solution {
                     insertions++; 
                 }
                 
-                // Now try to match this pair with an opening '('
-                if (!stack.isEmpty()) {
-                    stack.pop(); // Match found, pop one '('
-                } else {
-                    // No '(' available, we must insert a '('
-                    insertions++; 
-                }
-            }
-        }
-        
-        // After scanning, each leftover '(' in the stack needs two ')'
-        insertions += stack.size() * 2;
-        
-        return insertions;
-    }
-}
+       
