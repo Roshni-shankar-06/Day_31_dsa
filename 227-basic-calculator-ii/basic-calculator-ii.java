@@ -13,13 +13,4 @@ class Solution {
         }
         nums.push(num);
       } else if (c == '+' || c == '-' || c == '*' || c == '/') {
-        while (!ops.isEmpty() && compare(ops.peek(), c))
-          nums.push(calculate(ops.pop(), nums.pop(), nums.pop()));
-        ops.push(c);
-      }
-    }
-
-    while (!ops.isEmpty())
-      nums.push(calculate(ops.pop(), nums.pop(), nums.pop()));
-
-
+      
