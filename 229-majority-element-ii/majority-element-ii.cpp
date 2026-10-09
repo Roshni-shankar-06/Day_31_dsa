@@ -26,10 +26,4 @@ class Solution {
     const int count1 = ranges::count(nums, candidate1);
     const int count2 = ranges::count(nums, candidate2);
 
-    if (count1 > nums.size() / 3)
-      ans.push_back(candidate1);
-    if (count2 > nums.size() / 3)
-      ans.push_back(candidate2);
-    return ans;
-  }
-};
+  
