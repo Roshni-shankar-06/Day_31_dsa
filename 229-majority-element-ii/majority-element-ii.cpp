@@ -9,10 +9,4 @@ class Solution {
 
     for (const int num : nums)
       if (num == candidate1) {
-        ++countSoFar1;
-      } else if (num == candidate2) {
-        ++countSoFar2;
-      } else if (countSoFar1 == 0) {  // Assign the new candidate.
-        candidate1 = num;
-        ++countSoFar1;
-    
+     
