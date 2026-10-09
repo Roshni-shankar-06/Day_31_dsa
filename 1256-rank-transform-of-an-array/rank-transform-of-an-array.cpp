@@ -12,7 +12,3 @@ class Solution {
 
     for (int& a : arr)
       a = rank[a];
-
-    return arr;
-  }
-};
