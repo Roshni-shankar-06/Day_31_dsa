@@ -15,15 +15,4 @@ class Solution {
       y2 = Math.max(y2, r[3]);
 
       // the four points of the current rectangle
-      String[] points = new String[] {r[0] + " " + r[1], //
-                                      r[0] + " " + r[3], //
-                                      r[2] + " " + r[1], //
-                                      r[2] + " " + r[3]};
-      for (final String point : points)
-        if (!corners.add(point))
-          corners.remove(point);
-    }
-
-    if (corners.size() != 4)
-      return false;
-    
+   
