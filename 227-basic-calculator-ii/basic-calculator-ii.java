@@ -33,14 +33,4 @@ class Solution {
         return a - b;
       case '*':
         return a * b;
-      case '/':
-        return a / b;
-    }
-    throw new IllegalArgumentException();
-  }
-
-  // Returns true if priority(op1) >= priority(op2).
-  private boolean compare(char op1, char op2) {
-    return op1 == '*' || op1 == '/' || op2 == '+' || op2 == '-';
-  }
-}
+    
