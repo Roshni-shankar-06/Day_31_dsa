@@ -9,6 +9,3 @@ class Solution {
     for (const int a : sortedArr)
       if (!rank.contains(a))
         rank[a] = rank.size() + 1;
-
-    for (int& a : arr)
-      a = rank[a];
