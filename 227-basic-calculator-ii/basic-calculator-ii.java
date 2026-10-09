@@ -22,15 +22,4 @@ class Solution {
     while (!ops.isEmpty())
       nums.push(calculate(ops.pop(), nums.pop(), nums.pop()));
 
-    return nums.peek();
-  }
 
-  private int calculate(char op, int b, int a) {
-    switch (op) {
-      case '+':
-        return a + b;
-      case '-':
-        return a - b;
-      case '*':
-        return a * b;
-    
