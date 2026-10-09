@@ -26,11 +26,4 @@ class Solution {
 
     if (corners.size() != 4)
       return false;
-    if (!corners.contains(x1 + " " + y1) || //
-        !corners.contains(x1 + " " + y2) || //
-        !corners.contains(x2 + " " + y1) || //
-        !corners.contains(x2 + " " + y2))
-      return false;
-    return area == (x2 - x1) * (y2 - y1);
-  }
-}
+    
