@@ -12,14 +12,4 @@ class Solution {
             if (c == '(') {
                 stack.push(c);
             } else {
-                // We encountered a ')'
-                // Check if the NEXT character is also a ')' to form the required pair "))"
-                if (i + 1 < n && s.charAt(i + 1) == ')') {
-                    // It is a valid consecutive pair, skip the next index
-                    i++; 
-                } else {
-                    // Missing one ')', we must insert it right here
-                    insertions++; 
-                }
-                
-       
+              
