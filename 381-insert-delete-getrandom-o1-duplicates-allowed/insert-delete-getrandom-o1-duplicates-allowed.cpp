@@ -27,10 +27,4 @@ class RandomizedCollection {
 
   int getRandom() {
     const int index = rand() % items.size();
-    return items[index].val;
-  }
-
- private:
-  unordered_map<int, vector<int>> valToIndices;
-  vector<Item> items;
-};
+ 
