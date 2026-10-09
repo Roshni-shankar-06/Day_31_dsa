@@ -19,12 +19,4 @@ class RandomizedCollection {
     valToIndices[items.back().val][items.back().indexInMap] = index;
     valToIndices[val].pop_back();
     if (valToIndices[val].empty())
-      valToIndices.erase(val);
-    items[index] = items.back();
-    items.pop_back();
-    return true;
-  }
-
-  int getRandom() {
-    const int index = rand() % items.size();
- 
+    
